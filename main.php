@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,17 +8,19 @@
   <title>Weather App</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./style1.css">
+  <link rel="stylesheet" href="style1.css">
   <script src="./script.js" defer></script>
 </head>
 
 <body>
 
-  <div class="header">
-      <a href="index.php">LOGOUT</a>
-    </div>
-  <div class="card">
-    
+  <div class="container">
+    <img src="clipart251137.png">
+    <a href="index.php">LOGOUT</a>
+    <h2>Welcome  <?php  echo ($_SESSION["user"]); ?></h2>
+  </div>
+  
+  <div class="card">  
   <div class="search">
       <input type="text" class="search-bar" placeholder="Search">
       <button><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1.5em"

@@ -14,18 +14,26 @@ $title = 'Weather Forecast';
     <title><?=isset($title) ? $title : null;?></title>
 
      <link rel="stylesheet" href="css/bootstrap.min.css" />
+     <link rel="stylesheet" href="index.css" />
+
 </head>
 <body class="bg-light">
+
     <header>
         <div class="jumbotron jumbotron-fluid">
             <div class="container">
+            <div class="logo">
+        <img src="clipart251137.png">
+        <h1>MyWeather</h1>
+    </div>
                 <div class="row">
                     <div class="col-md-8">
                         <h1>Welcome to Weather</h1>
-                        <h2>Forecast website!</h2>
+                        <h1>Forecast website!</h1>
                     </div>
                     <div class="col-md-4">
                         <a href="login.php" class="btn btn-secondary">Login</a>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                   
                         <a href="register.php" class="btn btn-success">Register</a>
                     </div>
                 </div>

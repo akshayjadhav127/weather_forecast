@@ -49,8 +49,13 @@ $title = 'Register | @Hendrasob';
 
      <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/sb-admin-2.min.css" />
+    <link rel="stylesheet" href="login.css" />
 </head>
 <body class="bg-gradient-primary">
+    <div class="logo">
+        <img src="clipart251137.png">
+        <h1>MyWeather</h1>
+    </div>
 
     <div class="container">
 
@@ -68,30 +73,30 @@ $title = 'Register | @Hendrasob';
         <form action="" method="POST">
 
             <div class="form-group">
-                <label for="name">Full name</label>
+                <label for="name">Full name</label>&nbsp;
                 <input class="form-control" type="text" name="name" placeholder="Your Name" />
             </div>
 
             <div class="form-group">
-                <label for="username">Username</label>
+                <label for="username">Username</label>&nbsp;
                 <input class="form-control" type="text" name="username" placeholder="Username" />
             </div>
 
             <div class="form-group">
-                <label for="email">Email</label>
+                <label for="email">Email</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <input class="form-control" type="email" name="email" placeholder="Email" />
             </div>
 
             <div class="form-group">
-                <label for="password">Password</label>
+                <label for="password">Password</label>&nbsp;&nbsp;
                 <input class="form-control" type="password" name="password" placeholder="Password" />
             </div>
 
-            <input type="submit" class="btn btn-success btn-block" name="register" value="Register" />
+            <input type="submit" class="btn1 btn-success btn-block" name="register" value="Register" />
 
         </form>
                                     <hr>
-                                    <div class="text-center">
+                                    <div class="text-center1">
                                         <a class="small" href="login.php">Login to your account!</a>
                                     </div>
             
