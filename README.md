@@ -1,4 +1,6 @@
-Weather forcast application - MyWeather
+MyWeather | Akshay Jadhav
+#### Video Demo: https://youtu.be/WThWqB5hHzk
+#### Description: Weather forcast application - MyWeather
 Application in PHP, CSS, HTML, JavaScript, MySQL.
 
 ## Getting weather data
