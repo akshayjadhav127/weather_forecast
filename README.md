@@ -50,7 +50,7 @@ Replace `$ db_host`, `$ db_user`, `$ db_pass`, and `$ db_name` with the ones you
 
 ## How to use
 
-Then run the feature by opening [http://localhost:8081/](http://localhost:80/)
+Then run the feature by opening [http://localhost:8081/]
 open index.php file [http://localhost:8081/index.php]
 click on register>
 register your user>
