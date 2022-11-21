@@ -1,15 +1,16 @@
 Weather forcast application - MyWeather
 Application in PHP, CSS, HTML, JavaScript, MySQL.
 
-## getting weather data
+## Getting weather data
 
 generate your personal api link from below link
 https://openweathermap.org/
 
 Register on above site and get your api for using this application
 
-Next, you muck link this api in `script.js`.
+Next, you must link this api in `script.js`.
 
+```
 let weather = {
   apiKey: "Place your API key here",
   fetchWeather: function (city) {
@@ -18,6 +19,7 @@ let weather = {
        + city 
        + "&units=metric&appid=" 
        + this.apiKey
+```
 
 Place your api key>      
 
