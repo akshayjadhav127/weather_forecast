@@ -15,7 +15,7 @@
 <body>
 
   <div class="container">
-    <img src="clipart251137.png">
+    <img href="#" src="clipart251137.png">
     <a href="index.php">LOGOUT</a>
     <h2>Welcome  <?php  echo ($_SESSION["user"]); ?></h2>
   </div>

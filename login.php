@@ -48,7 +48,6 @@ $title = 'Login';
     <title><?=isset($title) ? $title : null;?></title>
 
     <link rel="stylesheet" href="login.css" />
-    <link rel="stylesheet" href="css/sb-admin-2.min.css" />
 </head>
 <body class="bg-gradient-primary">
     <div class="logo">

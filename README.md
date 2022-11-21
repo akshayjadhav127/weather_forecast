@@ -1,17 +1,27 @@
-<!-- markdownlint-disable MD033 MD041 -->
+Weather forcast application - MyWeather
+Application in PHP, CSS, HTML, JavaScript, MySQL.
 
-<div align="center">
-<img width="100px" src="https://github.com/hendrasob/Login-Register/blob/master/assets/github.gif" align="center" />
+## getting weather data
 
-# Login & Register
-<a href="https://github.com/hendrasob/Login-Register/search?l=php"><img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="GitHub" /></a>
-<a href="https://github.com/hendrasob/Login-Register/search?l=css"><img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="GitHub" /></a>
+generate your personal api link from below link
+https://openweathermap.org/
 
-</div>
+Register on above site and get your api for using this application
 
-Example of a register and login system using PHP.
+Next, you muck link this api in `script.js`.
 
-## Using
+let weather = {
+  apiKey: "Place your API key here",
+  fetchWeather: function (city) {
+    fetch(
+      "https://api.openweathermap.org/data/2.5/weather?q="
+       + city 
+       + "&units=metric&appid=" 
+       + this.apiKey
+
+Place your api key>      
+
+## Database
 
 To use this feature, you must import a database that is located in `database / users.sql`.
 
@@ -22,7 +32,7 @@ Next, you must link this feature to the database earlier.  You have to make sett
 
 $db_host = "localhost";
 $db_user = "localhost";
-$db_pass = "";
+$db_pass = "password";
 $db_name = "users";
 
 try {    
@@ -36,8 +46,12 @@ try {
 
 Replace `$ db_host`, `$ db_user`, `$ db_pass`, and `$ db_name` with the ones you use.
 
-Then run the feature by opening [http://localhost:8080/](http://localhost:8080/)
+## How to use
 
-## License
-
-This repo is under <a href="https://github.com/hendrasob/Login-Register/blob/master/LICENSE">MIT License</a>
+Then run the feature by opening [http://localhost:8081/](http://localhost:80/)
+open index.php file [http://localhost:8081/index.php]
+click on register>
+register your user>
+login your user with id and password>
+search city opetion>
+logout button>
