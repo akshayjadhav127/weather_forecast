@@ -1,6 +1,7 @@
-MyWeather | Akshay Jadhav
-#### Video Demo: https://youtu.be/WThWqB5hHzk
-#### Description: Weather forcast application - MyWeather
+## MyWeather | Weather Forecast Application | Akshay Jadhav
+
+Video Demo: https://youtu.be/WThWqB5hHzk
+A weather forecast application that allows users to search a city's weather and save their favorite cities. The application performs API calls to a third party resource to fetch for weather data.
 Application in PHP, CSS, HTML, JavaScript, MySQL.
 
 ## Getting weather data
@@ -23,11 +24,15 @@ let weather = {
        + this.apiKey
 ```
 
-Place your api key>      
+Place your api key>
 
-## Database
+## Third Party API limitation
 
-To use this feature, you must import a database that is located in `database / users.sql`.
+OpenWeatherMap API only support up to 60 calls within an hour. If you see an error in the website, this could mean that you have reached the limitation of API calls.
+
+## Database MySQL
+
+To use this feature, you must import a database that is located in `users.sql`.
 
 Next, you must link this feature to the database earlier.  You have to make settings in the `config.php` file.
 
@@ -50,12 +55,21 @@ try {
 
 Replace `$ db_host`, `$ db_user`, `$ db_pass`, and `$ db_name` with the ones you use.
 
+## Features
+
+Ability to login by individual user.
+Ability to search weather forecast for various cities in the world.  
+
 ## How to use
 
-Then run the feature by opening [http://localhost:8081/]
-open index.php file [http://localhost:8081/index.php]
-click on register>
-register your user>
-login your user with id and password>
-search city opetion>
-logout button>
+-Then run the feature by opening [http://localhost:8081/]
+-Open index.php file [http://localhost:8081/index.php]
+-Register your user - name, username, email, password.
+-Cant register with existing username.
+-Login your user with id and password
+-Search city for getting weather forecast for various cities in the world.
+-logout button.
+
+## Referance of previous project
+
+https://github.com/kammybdeng/weather_flask_webapp
