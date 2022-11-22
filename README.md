@@ -13,7 +13,7 @@ Register on above site and get your api for using this application
 
 Next, you must link this api in `script.js`.
 
-```
+
 let weather = {
   apiKey: "Place your API key here",
   fetchWeather: function (city) {
@@ -22,7 +22,7 @@ let weather = {
        + city 
        + "&units=metric&appid=" 
        + this.apiKey
-```
+
 
 Place your api key>
 
@@ -36,7 +36,7 @@ To use this feature, you must import a database that is located in `users.sql`.
 
 Next, you must link this feature to the database earlier.  You have to make settings in the `config.php` file.
 
-```
+
 <?php
 
 $db_host = "localhost";
@@ -51,7 +51,7 @@ try {
     //show error
     die("Something went wrong: " . $e->getMessage());
 }
-```
+
 
 Replace `$ db_host`, `$ db_user`, `$ db_pass`, and `$ db_name` with the ones you use.
 
